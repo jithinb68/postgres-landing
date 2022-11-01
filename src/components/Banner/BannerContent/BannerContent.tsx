@@ -1,6 +1,12 @@
-const BannerContent = () => {
+type BannerContentProps = {
+    children: React.ReactNode
+}
+
+const BannerContent: React.FC<BannerContentProps> = ({ children }) => {
     return (
-        <div></div>
+        <div>
+            {children}
+        </div>
     )
 }
 
