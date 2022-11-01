@@ -3,7 +3,7 @@
 The goal is to create a GraphQL for Postgres landing page app.
 image.png
 
-<img src="https://imgur.com/L3nPV3S" width="500">
+<img src="https://ibb.co/GRB4v18" width="500">
 
 ```
 npm install
