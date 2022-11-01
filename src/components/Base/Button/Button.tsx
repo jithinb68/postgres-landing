@@ -1,20 +1,29 @@
-import { IconMap } from "../../../utils/IconUtils"
+import { Icons } from '../../../utils/IconUtils';
+import Icon from '../Icon/Icon'
 
-const getIcon = (str: string): string => {
-    return IconMap[str] || ''
+type IconItem = {
+    name: string,
+    customClass: string
 }
 
 type ButtonProps = {
     label: string,
-    icon?: string
+    icon?: IconItem,
+    customClass?: string
 }
 
-const Button = ({ label, icon }: ButtonProps) => {
+const getIcon = (name: string) => {
+     // @ts-ignore - to prevent ts warning for accesing enums dynamically
+    return Icons[name.toUpperCase()]
+}
+
+const Button = ({ label, icon, customClass }: ButtonProps) => {
+    
     return (
         <button
-            className="cursor-pointer"
-        >
-            {icon && <img src={getIcon(icon)} alt={`${icon}-icon`} />}
+            className={`flex cursor-pointer ${customClass}`}
+        >   
+            {icon && <Icon customClass={icon.customClass} name={getIcon(icon.name)} />}
             {label}
         </button>
     )
