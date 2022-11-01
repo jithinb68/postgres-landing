@@ -7,7 +7,7 @@ type CardItemProps = {
     cardItem: Item,
     customClass?: string,
     titleCustomClass?: string,
-    customCardContent: React.ReactNode
+    customCardContent?: React.ReactNode
 }
 
 const Card: React.FC<CardItemProps> = ({ cardItem, customClass, titleCustomClass, customCardContent }) => {
