@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import backgroundImage from "../../assets/banner-background.svg";
+import { BannerHeader, BannerContent } from '../../components/Banner';
 
 const postgresLandingBannerStyles = {
     backgroundImage: `url(${backgroundImage})`,
@@ -9,7 +10,8 @@ const postgresLandingBannerStyles = {
 const PostgresLanding = () => {
     return (
         <Banner specificStyles={{ ...postgresLandingBannerStyles }} >
-            <h1>Dummy</h1>
+            <BannerHeader />
+            <BannerContent />
          </Banner >
     )
 }
