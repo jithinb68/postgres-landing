@@ -3,7 +3,7 @@ import Icon from '../Icon/Icon'
 
 type IconItem = {
     name: string,
-    customClass: string
+    customClass?: string
 }
 
 type ButtonProps = {

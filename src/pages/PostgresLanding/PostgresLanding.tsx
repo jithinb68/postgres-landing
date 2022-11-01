@@ -16,6 +16,7 @@ const PostgresLanding = () => {
         <Banner customStyles={{ ...postgresLandingBannerStyles }} >
             <div className='max-w-7xl m-auto p-7'>
                 <BannerHeader
+                    isLogoRequired={true}
                     left={{ headerLinks: leftMenu, startSlot: <GitHubBtn /> }}
                     right={{ headerLinks: rightMenu, startSlot: <Search />, endSlot: <Button label="Get Started" customClass='bg-black-light rounded text-white px-4 py-1.5 ml-3' /> }}
                 />

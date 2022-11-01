@@ -4,7 +4,6 @@ import { Icons } from '../../utils/IconUtils';
 
 const gitHubBtns = [
     {
-        id: 1,
         label: 'Star',
         customClass: 'flex items-center px-2 py-1 rounded-l text-xs font-medium border border-grey-dark bg-grey-light',
         icon: {
@@ -13,7 +12,6 @@ const gitHubBtns = [
         }
     },
     {
-        id: 2,
         label: '883',
         customClass: 'flex items-center px-2 py-1 rounded-r text-xs font-medium border-r border-y border-grey-dark',
     }
