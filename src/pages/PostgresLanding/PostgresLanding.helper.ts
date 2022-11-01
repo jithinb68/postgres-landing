@@ -1,3 +1,5 @@
+// helper file to store constants required in page
+
 const leftMenu = [
     {
         name: 'Product',

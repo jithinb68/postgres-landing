@@ -1,4 +1,6 @@
 
+// Provided the ability to wrap multiple links and also has slots ( start and end) which has a plug and use capability.
+
 import Link from '../Base/Link/Link'
 
 type Item = {

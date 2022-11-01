@@ -1,3 +1,7 @@
+// Root component which wraps the banner component
+// All page level logics and constants are stored in this root and components are mostly kept dump for reusable 
+// Addition component helper and variable storge helper files have been created for seperation of concerna and cleaner file and
+
 import Banner from '../../components/Banner/Banner';
 import backgroundImage from "../../assets/banner-background.svg";
 import { BannerHeader, BannerContent } from '../../components/Banner';

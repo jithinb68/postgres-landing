@@ -1,3 +1,5 @@
+// helper file to build smaller page specific reusable components
+
 import SplitButton from '../../components/Base/Button/SplitButton';
 import Icon from '../../components/Base/Icon/Icon';
 import { Icons } from '../../utils/IconUtils';
