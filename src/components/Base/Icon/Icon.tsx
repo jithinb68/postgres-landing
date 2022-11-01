@@ -5,12 +5,13 @@ const getIcon = (str: string): string => {
 }
 
 type IconProps = {
-    name: string
+    name: string,
+    customClass?: string
 }
 
-const Icon = ({ name }: IconProps) => {
+const Icon = ({ name, customClass }: IconProps) => {
     return (
-        <img src={getIcon(name)} alt={`${name}-icon`} />
+        <img className={customClass} src={getIcon(name)} alt={`${name}-icon`} />
     )
 }
 

@@ -1,11 +1,11 @@
 type BannerProps = {
     children: React.ReactNode,
-    specificStyles?: React.CSSProperties
+    customStyles?: React.CSSProperties
 }
 
-const Banner = ({ children, specificStyles }: BannerProps) => {
+const Banner = ({ children, customStyles }: BannerProps) => {
     return (
-        <div className="h-screen" style={specificStyles}>
+        <div className="h-screen" style={customStyles}>
             {children}
         </div>
     )
