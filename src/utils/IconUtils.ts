@@ -1,13 +1,15 @@
-import { boxIcon, searchIcon, gitHubIcon } from "../assets/icons/index";
+import { boxIcon, searchIcon, gitHubIcon, arrowIcon } from "../assets/icons/index";
 
 export const IconMap: Record<string, string> = {
     SEARCH: searchIcon,
     BOX: boxIcon,
-    GITHUB: gitHubIcon
+    GITHUB: gitHubIcon,
+    ARROW: arrowIcon
 }
 
 export enum Icons {
     SEARCH = 'SEARCH',
     BOX = 'BOX',
-    GITHUB = 'GITHUB'
+    GITHUB = 'GITHUB',
+    ARROW= 'ARROW'
 }

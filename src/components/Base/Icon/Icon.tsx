@@ -11,7 +11,7 @@ type IconProps = {
 
 const Icon = ({ name, customClass }: IconProps) => {
     return (
-        <img className={customClass} src={getIcon(name)} alt={`${name}-icon`} />
+        getIcon(name) ? <img className={customClass} src={getIcon(name)} alt={`${name?.toLowerCase()}-icon`} /> : null
     )
 }
 

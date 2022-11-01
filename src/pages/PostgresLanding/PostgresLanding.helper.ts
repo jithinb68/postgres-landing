@@ -28,4 +28,19 @@ const rightMenu = [
     }
 ];
 
-export { leftMenu, rightMenu }
+const cardList = [
+    {
+        title: 'New to Hasura?',
+        content: 'Read our getting started guide'
+    },
+    {
+        title: 'Documentation',
+        content: 'Setting values of fields using SQL functions'
+    },
+    {
+        title: 'Webinar',
+        content: 'Top PostgreSQL Flavours and Extensions that work with Hasura'
+    }
+];
+
+export { leftMenu, rightMenu, cardList }

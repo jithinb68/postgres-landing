@@ -8,7 +8,7 @@ type Item = {
 
 type LinkWrapperProps = {
     menuItems: Item[],
-    linkCustomClass: string,
+    linkCustomClass?: string,
     startSlot?: React.ReactNode
     endSlot?: React.ReactNode,
     customClass?: string

@@ -13,26 +13,28 @@ type HeaderElement = {
 }
 
 type HeaderProps = {
-    left: HeaderElement,
-    right: HeaderElement
+    isLogoRequired?: boolean
+    left?: HeaderElement,
+    right?: HeaderElement
 }
 
-const Header: React.FC<HeaderProps> = ({ left, right }) => {
+const Header: React.FC<HeaderProps> = ({ left, right, isLogoRequired }) => {
     return (
-        <div className='flex items-center px-2.5'>
-            <LogoWrapper />
-            <LinkWrapper
+        <div className='flex items-center'>
+            {isLogoRequired && <LogoWrapper />}
+            {left && <LinkWrapper
                 menuItems={left.headerLinks}
-                linkCustomClass="font-medium px-5"
+                linkCustomClass="font-medium px-5 hover:text-blue"
                 startSlot={left.startSlot}
-            />
-            <LinkWrapper
-                linkCustomClass="font-medium px-5"
+                endSlot={left.endSlot}
+            />} 
+            {right && <LinkWrapper
+                linkCustomClass="font-medium px-5 hover:text-blue"
                 customClass="justify-end grow"
                 menuItems={right.headerLinks}
                 startSlot={right.startSlot}
                 endSlot={right.endSlot}
-            />
+            />}
         </div>
     )
 }
