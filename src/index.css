@@ -9,3 +9,9 @@ body, button {
     font-size: 14px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
+.hasura-video-iframe {
+    height: 330px;
+    width: 600px;
+    border-radius: 8px;
+}

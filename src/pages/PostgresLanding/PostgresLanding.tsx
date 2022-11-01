@@ -28,7 +28,7 @@ const PostgresLanding = () => {
                             <Button label="Get Started" customClass='bg-black-base rounded text-white text-base px-12 py-3 font-medium' />
                         </div>
                         <div>
-                            <iframe title='hasura video' width="600" height="330" src="https://www.youtube.com/embed/xiZ61BkMKo8"></iframe>
+                            <iframe title='hasura video' className='hasura-video-iframe' src="https://www.youtube.com/embed/xiZ61BkMKo8"></iframe>
                         </div>
                     </div>
                     <div className='grid grid-cols-3 gap-10'>

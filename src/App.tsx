@@ -1,4 +1,3 @@
-import './App.css';
 import PostgresLanding from './pages/PostgresLanding/PostgresLanding';
 
 function App() {
